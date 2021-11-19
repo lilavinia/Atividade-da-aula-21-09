@@ -1,0 +1,50 @@
+<!DOCTYPE html >
+<html >
+  <cabeça >
+    <meta  charset = " utf-8 " >
+    <meta  name = " viewport " content = " width = device-width " >
+    <title ></title >  
+  </head >
+
+  <corpo >
+    <script  language = " javascript " >
+       var  a ;
+    var  b ;
+    var  c ;
+    var  hipotenusa ;
+    var  catetoum ;
+    var  catetodois ;
+
+    a  =  parseFloat ( window . prompt ( "Digite o lado 1:" ) ) ;
+    b  =  parseFloat ( window . prompt ( "Digite o lado 2:" ) ) ;
+    c  =  parseFloat ( window . prompt ( "Digite o lado 3:" ) ) ;
+    
+    hipotenusa  =  a ;
+    catetoum  =  b ;
+    catetodois  =  c ;
+     
+    if  ( b > a  &  b > c )
+    {
+      hipotenusa  =  b ;
+      catetoum  =  a ;
+    }
+
+    else  if  ( c > a  &  c > b )
+    {
+      hipotenusa  =  c ;
+      catetodois  =  a ;
+    }
+
+    if  ( ( hipotenusa  *  hipotenusa )  ==  ( catetoum  *  catetodois )  +  ( catetodois  *  catetodois ) )
+    {
+        documento . write ( "As medidas formam um triângulo retângulo!" ) ;
+    }
+
+    outro
+    {
+        documento . write ( "As medidas NÃO formam um triângulo retângulo!" ) ;
+    }
+
+    </script>
+  </body >
+</html >

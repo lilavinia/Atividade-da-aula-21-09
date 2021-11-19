@@ -1,0 +1,41 @@
+<!DOCTYPE html >
+<html >
+  <head >
+    <meta  charset = " utf-8 " >
+    <title > Trinta valores da série de Fibonacci. </title > 
+  </head >
+
+<script >
+    function  fibonacci ( quadro ,  texto )  {
+        var  numero  =  0 ;
+        var  proximo_numero  =  1 ;
+        var  auxiliar ;
+        quadro.valor  =  "" ;
+
+        while  ( numero  <=  texto . valor )  {
+            quadro . valor  +=  numero  +  "," ;
+            auxiliar  =  proximo_numero ;
+            proximo_numero  =  proximo_numero  +  numero ;
+            numero  =  auxiliar ;
+        }
+    }
+</script>
+
+<corpo>
+    <form  name = " form " >
+        <div  align = " center " >
+            <fieldset  style = " width: 40%; " >
+                <div  align = " center ">
+                    Até que valor deseja mostrar a sequência de Fibonacci? <Br/>
+                    <p> <input  type = " text " name = " texto " size = " 41 " >
+                        <Br/>
+                        <textarea  rows = " 6 " cols = " 31 " name = " area " readonly > </textarea>
+                        <Br /> <br />
+                        <input  type = " button " value = " Mostrar Fibonnaci "
+                            onclick = "fibonacci (this.form.area, this.form.texto) " >
+                </div>
+            </fieldset>
+        </div >
+    </form >
+</body >
+</html >
